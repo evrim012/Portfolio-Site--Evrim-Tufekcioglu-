@@ -1,0 +1,55 @@
+/*
+Colors used:
+Primary Color (Light black): #2B2B2B;
+Secondary Color (Black): #00000;
+Light grey: #F0F0F0;
+Purple: #5D30BF;
+Light purple: #9A8DF2;
+Light blue: #0CC8F2;
+Cyan: #13DCF2;
+Mustard yellow: #F2D06B;
+*/
+body {
+  background-color: #F0F0F0;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 18px; /* Sets the font size*/
+  font-weight: 400; /* Sets the font weight*/
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #2B2B2B;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.50em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.15em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  color: #5D30BF;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #994c30;
+}
