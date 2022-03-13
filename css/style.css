@@ -12,9 +12,12 @@ Mustard yellow: #F2D06B;
 body {
   background-color: #F0F0F0;
   font-family: 'League Spartan', sans-serif;
-  font-size: 18px; /* Sets the font size*/
-  font-weight: 400; /* Sets the font weight*/
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 18px;
+  /* Sets the font size*/
+  font-weight: 400;
+  /* Sets the font weight*/
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #2B2B2B;
 }
 
@@ -46,10 +49,43 @@ img {
   width: 100%;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #5D30BF;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #9A8DF2;
+  color: #ffffff;/* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #7262de; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #7262de;
+  text-transform: uppercase;
+  border: 2px solid #9A8DF2;
+}
+
+.button.contact:hover {
+  background-color: #7262de;
+  color: #ffffff;
 }
