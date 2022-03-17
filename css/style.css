@@ -10,7 +10,7 @@ Cyan: #13DCF2;
 Mustard yellow: #F2D06B;
 */
 body {
-  background-color: #F0F0F0;
+  background-color: #fefefe;
   font-family: 'League Spartan', sans-serif;
   font-size: 18px;
   /* Sets the font size*/
@@ -49,10 +49,17 @@ img {
   width: 100%;
 }
 
+a{
+  color: #5D30BF;
+  }
+a:visited {
+color: #5D30BF;
+}
+
 a:hover,
 a:focus {
-  color: #5D30BF;
-  text-decoration: underline;
+  color: #994c30;
+  text-decoration: none;
   /* Underlining when hovering over a link */
 }
 
@@ -71,11 +78,12 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #7262de; /* width of the border, type, color */
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+    color: #ffffff;/* needed to override the default link color */
 }
 
 .button.contact {
@@ -88,4 +96,101 @@ a:active {
 .button.contact:hover {
   background-color: #7262de;
   color: #ffffff;
+}
+header {
+  background-color: #ff44c4;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.center {
+  text-align: center; /* I add center to div class to activate */
+}
+
+.logo {
+  max-width: 200px ;
+}
+
+header {
+  position: fixed;
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
+  -moz-box-shadow:    0px 3px 7px 0px rgba(50, 50, 50, 0.46);
+  box-shadow:         0px 3px 7px 0px rgba(50, 50, 50, 0.46);
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
+  color: #5D30BF;
+}
+
+nav > ul > li > a:visited {
+  color: #2B2B2B;
+}
+
+nav > ul > li > a:hover {
+  color: #5D30BF;
+}
+
+#hero {
+ padding: 10px 0;
+ display: inline-block;
+ width: 100%;
+}
+
+main {
+  padding-top: 200px;
+}
+
+.plutopaybackground {
+  background-image: linear-gradient(to bottom right, blue, white);
+}
+
+.plutotext {
+  color: white;
+}
+
+.plutofont {
+  font-family: 'Kanit', sans-serif;
+}
+
+#contact {
+text-align: center;
+}
+
+.competitorlogo{
+  max-width: 80px;
 }
