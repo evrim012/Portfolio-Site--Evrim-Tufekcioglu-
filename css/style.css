@@ -49,11 +49,12 @@ img {
   width: 100%;
 }
 
-a{
+a {
   color: #5D30BF;
-  }
+}
+
 a:visited {
-color: #5D30BF;
+  color: #5D30BF;
 }
 
 a:hover,
@@ -72,18 +73,22 @@ a:active {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #9A8DF2;
-  color: #ffffff;/* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #7262de; /* width of the border, type, color */
+  border-bottom: 2px solid #7262de;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    color: #ffffff;/* needed to override the default link color */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  color: #ffffff;
+  /* needed to override the default link color */
 }
 
 .button.contact {
@@ -97,6 +102,7 @@ a:active {
   background-color: #7262de;
   color: #ffffff;
 }
+
 header {
   background-color: #ff44c4;
   padding: 10px;
@@ -104,25 +110,27 @@ header {
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 .center {
-  text-align: center; /* I add center to div class to activate */
+  text-align: center;
+  /* I add center to div class to activate */
 }
 
 .logo {
-  max-width: 200px ;
+  max-width: 100px;
 }
 
 header {
@@ -132,65 +140,86 @@ header {
   padding: 10px 0;
   width: 100%;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
-  -moz-box-shadow:    0px 3px 7px 0px rgba(50, 50, 50, 0.46);
-  box-shadow:         0px 3px 7px 0px rgba(50, 50, 50, 0.46);
+  -moz-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
+  box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
-  padding: 0 15px;
+nav>ul>li>a {
+  padding: 0 12px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
   text-decoration: none;
 }
 
-nav > ul > li > a:active {
-  color: #5D30BF;
-}
-
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #2B2B2B;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
+  color: #5D30BF;
+}
+
+nav>ul>li>a:active {
   color: #5D30BF;
 }
 
 #hero {
- padding: 10px 0;
- display: inline-block;
- width: 100%;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 main {
-  padding-top: 200px;
+  padding-top: 120px;
 }
 
 .plutopaybackground {
   background-image: linear-gradient(to bottom right, blue, white);
+  width: 100%;
+  padding 100px;
 }
 
-.plutotext {
+.projectwelcome h1 {
+  font-family: 'Kanit', sans-serif;
   color: white;
 }
 
-.plutofont {
-  font-family: 'Kanit', sans-serif;
+.projectwelcome p {
+  color: white;
 }
 
 #contact {
-text-align: center;
+  text-align: center;
 }
 
-.competitorlogo{
+.competitorlogo {
   max-width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  color: #5D30BF !important;
+}
+
+.social {
+  list-style-type: none;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social .fa-brands {
+  font-size: 1.3em;
+  color: #2B2B2B;
 }
