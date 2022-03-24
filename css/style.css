@@ -9,10 +9,14 @@ Light blue: #0CC8F2;
 Cyan: #13DCF2;
 Mustard yellow: #F2D06B;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fefefe;
   font-family: 'League Spartan', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   /* Sets the font size*/
   font-weight: 400;
   /* Sets the font weight*/
@@ -69,7 +73,7 @@ a:active {
   color: #994c30;
 }
 
-.button {
+a.button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #9A8DF2;
@@ -84,14 +88,14 @@ a:active {
   transition: 0.5s opacity;
 }
 
-.button:hover {
+a.button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   color: #ffffff;
   /* needed to override the default link color */
 }
 
-.button.contact {
+a.button.contact {
   background-color: transparent;
   color: #7262de;
   text-transform: uppercase;
@@ -101,6 +105,12 @@ a:active {
 .button.contact:hover {
   background-color: #7262de;
   color: #ffffff;
+}
+
+.prototypebut {
+text-align: center;
+font-size: 1.5em;
+padding: 5px
 }
 
 header {
@@ -113,18 +123,13 @@ header {
 .container {
   padding: 0 15px;
   max-width: 1200px;
- margin-left: auto;
- margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
-}
-
-#hero h1 {
-  text-align: center;
-  /* Centers text */
 }
 
 .center {
@@ -147,9 +152,14 @@ header {
   box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
 }
 
+nav {
+  margin-top: 1em;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -177,36 +187,63 @@ nav>ul>li>a:active {
 }
 
 #hero {
-  padding: 10px 0;
+  padding: 50px 0;
   display: inline-block;
   width: 100%;
 }
 
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
 main {
-  padding-top: 140px;
+  padding-top: 136px;
 }
 
 .plutopaybackground {
   background-image: linear-gradient(to bottom right, blue, white);
+  padding: 25px 15px;
 }
 
 .projectwelcome h1 {
   font-family: 'Kanit', sans-serif;
   color: white;
+  margin-top: 0;
 }
 
 .projectwelcome p {
   color: white;
+  margin: 0;
+}
+
+.projectwelcome .row {
+  margin: 0px;
 }
 
 #contact {
   text-align: center;
 }
 
+
 .competitorlogo {
-  max-width: 80px;
   display: flex;
   justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.lowfid {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.lowfid img {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.phone {
+  white-space: nowrap;
 }
 
 .active {
@@ -215,9 +252,11 @@ main {
 
 .social {
   list-style-type: none;
-  padding: 0 100px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .social .fa-brands {
@@ -232,9 +271,17 @@ main {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -246,8 +293,13 @@ main {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -255,9 +307,15 @@ main {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(350px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(350px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 10s cloud-move-reverse infinite linear;
 }
@@ -274,15 +332,15 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 14px;
   }
 
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   main {
-    padding-top: 99px;
+    padding-top: 93px;
   }
 
   #hero span {
@@ -297,27 +355,85 @@ Medium devices (640px and larger)
     float: left;
   }
 
+  .work .row .column:last-child {
+    padding-left: 1.5em;
+  }
+
+  .h3nomargin {
+    margin: 0px;
+  }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
+
+  .profile img {
+    max-width: 300px;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .profilebck {
+    background: radial-gradient(#000000, #2B2B2B);
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .projectwelcome .column:first-child {
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .projectmockup{
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+  }
+  #contact span {
+    display: block;
+  }
+
 }
+
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .col-lg-7 {
     width: 60%;
-    float: left;
-  }
-  .col-lg-5 {
-    width: 40%;
-    float: left;
   }
 
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .col-lg-5 .row .col-md-6 h3 {
+    margin: 0;
+    }
+
+    .col-lg-7 p {
+    margin-right: 4em
+    }
+
+  .col-lg-5 .col-md-6 .ul {
+    padding: 0;
+    }
+
+    body {
+      font-size: 22px;
+    }
+
+    .project h2, .project h3, .project h4, .project ul, .project p {
+max-width: 500px;
+    }
 }
 
 /* ==============================
