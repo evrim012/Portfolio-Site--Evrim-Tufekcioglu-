@@ -137,14 +137,34 @@ header {
   /* I add center to div class to activate */
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 30px;
+  padding-right: 0px;
+  padding-top: 9px;
+}
+
 .logo {
   max-width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
+
 
 header {
   position: fixed;
   background-color: #F1F1F1;
-  text-align: center;
   padding: 10px 0;
   width: 100%;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
@@ -152,18 +172,10 @@ header {
   box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
 }
 
-nav {
-  margin-top: 1em;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -198,11 +210,11 @@ nav>ul>li>a:active {
 }
 
 main {
-  padding-top: 136px;
+  padding-top: 80px;
 }
 
 .plutopaybackground {
-  background-image: linear-gradient(to bottom right, blue, white);
+  background-image: linear-gradient(to bottom right, #0287FF, #FFFFFF);
   padding: 25px 15px;
 }
 
@@ -320,6 +332,11 @@ main {
   animation: 10s cloud-move-reverse infinite linear;
 }
 
+nav > ul {
+list-style-type: none;
+padding: 0;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -334,6 +351,22 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 14px;
   }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
 
   body {
     font-size: 20px;
@@ -400,8 +433,14 @@ Medium devices (640px and larger)
     display: block;
   }
 
-}
+  .projectwelcome .row {
+    display: flex;
+  }
 
+  .projectwelcome .column {
+    display: flex;
+  }
+}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -433,6 +472,16 @@ Large devices (1024px or larger)
 
     .project h2, .project h3, .project h4, .project ul, .project p {
 max-width: 500px;
+    }
+    .plutopay1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+    }
+
+    .projectwelcome .col-md-6 {
+    font-size: 1.35em;
     }
 }
 
