@@ -135,14 +135,34 @@ header {
   /* I add center to div class to activate */
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 30px;
+  padding-right: 0px;
+  padding-top: 9px;
+}
+
 .logo {
   max-width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
+
 
 header {
   position: fixed;
   background-color: #F1F1F1;
-  text-align: center;
   padding: 10px 0;
   width: 100%;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
@@ -153,10 +173,6 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -189,6 +205,7 @@ main {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding-top: 120px;
 =======
   padding-top: 136px;
@@ -211,6 +228,13 @@ main {
 =======
 =======
 >>>>>>> parent of f615b8a (Update style.css)
+=======
+  padding-top: 80px;
+}
+
+.plutopaybackground {
+  background-image: linear-gradient(to bottom right, #0287FF, #FFFFFF);
+>>>>>>> parent of d3c05f5 (Revert "Update style.css")
   padding: 25px 15px;
 >>>>>>> parent of f615b8a (Update style.css)
 =======
@@ -291,6 +315,11 @@ main {
   animation: 10s cloud-move-reverse infinite linear;
 }
 
+nav > ul {
+list-style-type: none;
+padding: 0;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 >>>>>>> parent of f615b8a (Update style.css)
@@ -306,6 +335,22 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
 
   body {
     font-size: 18px;
@@ -332,8 +377,52 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+<<<<<<< HEAD
 }
 
+=======
+
+  .profile img {
+    max-width: 300px;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .profilebck {
+    background: radial-gradient(#000000, #2B2B2B);
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .projectwelcome .column:first-child {
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .projectmockup{
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+  }
+  #contact span {
+    display: block;
+  }
+
+  .projectwelcome .row {
+    display: flex;
+  }
+
+  .projectwelcome .column {
+    display: flex;
+  }
+}
+
+>>>>>>> parent of d3c05f5 (Revert "Update style.css")
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -348,6 +437,38 @@ Large devices (1024px or larger)
     float: left;
   }
 
+<<<<<<< HEAD
+=======
+  .col-lg-5 .row .col-md-6 h3 {
+    margin: 0;
+    }
+
+    .col-lg-7 p {
+    margin-right: 4em
+    }
+
+  .col-lg-5 .col-md-6 .ul {
+    padding: 0;
+    }
+
+    body {
+      font-size: 22px;
+    }
+
+    .project h2, .project h3, .project h4, .project ul, .project p {
+max-width: 500px;
+    }
+    .plutopay1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+    }
+
+    .projectwelcome .col-md-6 {
+    font-size: 1.35em;
+    }
+>>>>>>> parent of d3c05f5 (Revert "Update style.css")
 }
 
 /* ==============================
