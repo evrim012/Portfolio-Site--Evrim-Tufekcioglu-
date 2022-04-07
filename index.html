@@ -24,14 +24,17 @@
 <body>
   <header>
     <div class="container">
-      <a href="index.html"><img class="logo" src="img/Evrimlogo.png" alt="evrimtufekcioglu"></a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" class="active">My Work</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logo" src="img/Evrimlogo.png" alt="evrimtufekcioglu"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" class="active">My Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -47,7 +50,7 @@
         <h2>My work</h2>
         <div class="row">
           <div class="column col-md-6 col-lg-7 plutopaybackground">
-            <img class="plutopay" src="img/plutopay/plutopay.png" alt="">
+            <img class="plutopay1" src="img/plutopay/plutopay.png" alt="">
           </div>
           <div class="column col-md-6 col-lg-5">
             <h3 class="h3nomargin">PlutoPay</h3>
@@ -1369,7 +1372,9 @@
       </div>
     </div>
   </footer>
-<script src="js/scripts.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
