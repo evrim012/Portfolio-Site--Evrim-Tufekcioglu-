@@ -196,7 +196,11 @@ nav>ul>li>a:active {
 
 main {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding-top: 120px;
+=======
+  padding-top: 136px;
+>>>>>>> parent of f615b8a (Update style.css)
 =======
   padding-top: 136px;
 >>>>>>> parent of f615b8a (Update style.css)
@@ -205,9 +209,12 @@ main {
 .plutopaybackground {
   background-image: linear-gradient(to bottom right, blue, white);
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100%;
   padding 100px;
 =======
+=======
+>>>>>>> parent of f615b8a (Update style.css)
   padding: 25px 15px;
 >>>>>>> parent of f615b8a (Update style.css)
 }
