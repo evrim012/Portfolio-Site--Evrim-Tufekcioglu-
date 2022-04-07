@@ -9,14 +9,10 @@ Light blue: #0CC8F2;
 Cyan: #13DCF2;
 Mustard yellow: #F2D06B;
 */
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: #fefefe;
   font-family: 'League Spartan', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   /* Sets the font size*/
   font-weight: 400;
   /* Sets the font weight*/
@@ -73,29 +69,29 @@ a:active {
   color: #994c30;
 }
 
-a.button {
+.button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #9A8DF2;
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
-  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #7262de;
   /* width of the border, type, color */
-  transition: 0.5s opacity;
+  transition: 0.2s opacity;
+  text-decoration: none;
 }
 
-a.button:hover {
+.button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   color: #ffffff;
   /* needed to override the default link color */
 }
 
-a.button.contact {
+.button.contact {
   background-color: transparent;
   color: #7262de;
   text-transform: uppercase;
@@ -107,12 +103,15 @@ a.button.contact {
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 .prototypebut {
   text-align: center;
   font-size: 1.5em;
   padding: 5px
 }
 
+=======
+>>>>>>> 2d34284bf932ed283e284880b534e0cf3d507935
 header {
   background-color: #ff44c4;
   padding: 10px;
@@ -122,14 +121,22 @@ header {
 /* Layout styling */
 .container {
   padding: 0 15px;
+<<<<<<< HEAD
+=======
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+ margin-left: auto;
+ margin-right: auto;
+>>>>>>> parent of b9103d6 (Update style.css)
 }
 
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
 }
 
 .center {
@@ -145,6 +152,7 @@ header {
   position: relative;
 }
 
+<<<<<<< HEAD
 .navtoggle.responsive li {
   display: block;
 }
@@ -163,6 +171,8 @@ header {
   padding: 0 0 10px;
 }
 
+=======
+>>>>>>> 2d34284bf932ed283e284880b534e0cf3d507935
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -178,6 +188,8 @@ header {
   margin-bottom: auto;
 }
 
+
+
 header {
   position: fixed;
   background-color: #F1F1F1;
@@ -188,6 +200,7 @@ header {
   box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
 }
 
+<<<<<<< HEAD
 nav {
   margin-top: 1em;
   display: inline-block;
@@ -197,6 +210,11 @@ nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+=======
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+>>>>>>> 2d34284bf932ed283e284880b534e0cf3d507935
 }
 
 nav>ul>li>a {
@@ -220,38 +238,66 @@ nav>ul>li>a:active {
 }
 
 #hero {
-  padding: 50px 0;
+  padding: 10px 0;
   display: inline-block;
   width: 100%;
 }
 
-#hero h1 {
-  text-align: center;
-  /* Centers text */
-}
-
 main {
+<<<<<<< HEAD
   padding-top: 56px;
 }
 
 .plutopaybackground {
   background-image: linear-gradient(to bottom right, #0287FF, #FFFFFF);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  padding-top: 120px;
+=======
+  padding-top: 136px;
+>>>>>>> parent of f615b8a (Update style.css)
+=======
+  padding-top: 136px;
+>>>>>>> parent of f615b8a (Update style.css)
+=======
+  padding-top: 140px;
+>>>>>>> parent of b9103d6 (Update style.css)
+}
+
+.plutopaybackground {
+  background-image: linear-gradient(to bottom right, blue, white);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  width: 100%;
+  padding 100px;
+=======
+=======
+>>>>>>> parent of f615b8a (Update style.css)
+=======
+  padding-top: 80px;
+}
+
+.plutopaybackground {
+  background-image: linear-gradient(to bottom right, #0287FF, #FFFFFF);
+>>>>>>> parent of d3c05f5 (Revert "Update style.css")
+>>>>>>> 2d34284bf932ed283e284880b534e0cf3d507935
   padding: 25px 15px;
+>>>>>>> parent of f615b8a (Update style.css)
+=======
+>>>>>>> parent of b9103d6 (Update style.css)
 }
 
 .projectwelcome h1 {
   font-family: 'Kanit', sans-serif;
   color: white;
-  margin-top: 0;
 }
 
 .projectwelcome p {
   color: white;
-  margin: 0;
-}
-
-.projectwelcome .row {
-  margin: 0px;
 }
 
 #contact {
@@ -259,23 +305,9 @@ main {
 }
 
 .competitorlogo {
+  max-width: 80px;
   display: flex;
   justify-content: space-between;
-  overflow-x: scroll;
-}
-
-.lowfid {
-  display: flex;
-  overflow-x: scroll;
-}
-
-.lowfid img {
-  padding-right: 3px;
-  padding-left: 3px;
-}
-
-.phone {
-  white-space: nowrap;
 }
 
 .active {
@@ -284,17 +316,17 @@ main {
 
 .social {
   list-style-type: none;
-  padding: 0;
+  padding: 0 100px;
   display: flex;
   justify-content: space-between;
-  max-width: 200px;
-  margin: 0 auto;
 }
 
 .social .fa-brands {
   font-size: 1.3em;
   color: #2B2B2B;
 }
+<<<<<<< HEAD
+=======
 
 .berlin-illustration {
   width: 100%;
@@ -303,17 +335,9 @@ main {
 }
 
 @keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
 }
 
 .sun {
@@ -325,13 +349,8 @@ main {
 }
 
 @keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
 }
 
 .cloud-front {
@@ -339,21 +358,21 @@ main {
 }
 
 @keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(350px, 48px);
-  }
+  from {transform: translate(446px,48px);}
+  to {transform: translate(350px, 48px);}
 }
-
 .cloud-back {
   animation: 10s cloud-move-reverse infinite linear;
 }
 
+nav > ul {
+list-style-type: none;
+padding: 0;
+}
+
 /* ==============================
 Medium devices (640px and larger)
+>>>>>>> parent of f615b8a (Update style.css)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
@@ -364,7 +383,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 14px;
+    margin-top: 4px;
   }
 
   nav>ul>li {
@@ -372,19 +391,32 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:not(:last-child) {
+<<<<<<< HEAD
     display: inline-block;
   }
 
   .navtoggle li:last-child {
     display: none;
   }
+=======
+  display: inline-block;
+}
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+>>>>>>> 2d34284bf932ed283e284880b534e0cf3d507935
 
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   main {
-    padding-top: 93px;
+    padding-top: 99px;
   }
 
   #hero span {
@@ -399,19 +431,15 @@ Medium devices (640px and larger)
     float: left;
   }
 
-  .work .row .column:last-child {
-    padding-left: 1.5em;
-  }
-
-  .h3nomargin {
-    margin: 0px;
-  }
-
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
+<<<<<<< HEAD
+}
+
+=======
 
   .profile img {
     max-width: 300px;
@@ -454,18 +482,23 @@ Medium devices (640px and larger)
   }
 }
 
+>>>>>>> parent of d3c05f5 (Revert "Update style.css")
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
   .col-lg-7 {
     width: 60%;
+    float: left;
   }
-
   .col-lg-5 {
     width: 40%;
+    float: left;
   }
 
+<<<<<<< HEAD
+=======
   .col-lg-5 .row .col-md-6 h3 {
     margin: 0;
   }
@@ -482,6 +515,7 @@ Large devices (1024px or larger)
     font-size: 22px;
   }
 
+<<<<<<< HEAD
   .project h2, .project h3, .project h4, .project ul, .project p {
     max-width: 500px;
   }
@@ -496,9 +530,26 @@ Large devices (1024px or larger)
   .projectwelcome .col-md-6 {
     font-size: 1.35em;
   }
+=======
+    .project h2, .project h3, .project h4, .project ul, .project p {
+max-width: 500px;
+    }
+    .plutopay1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+    }
+
+    .projectwelcome .col-md-6 {
+    font-size: 1.35em;
+    }
+>>>>>>> parent of d3c05f5 (Revert "Update style.css")
+>>>>>>> 2d34284bf932ed283e284880b534e0cf3d507935
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
+=======
