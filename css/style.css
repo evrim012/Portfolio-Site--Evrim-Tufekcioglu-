@@ -173,8 +173,7 @@ header {
 }
 
 nav {
-  margin-top: 1em;
-  display: inline-block;
+  width: 100%;
 }
 
 nav>ul {
@@ -348,7 +347,7 @@ main {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid #5D30BF;
 }
 
 .navtoggle.responsive li:last-child  {
