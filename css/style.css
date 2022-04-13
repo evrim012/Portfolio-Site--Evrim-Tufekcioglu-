@@ -17,15 +17,15 @@ body {
   background-color: #fefefe;
   font-family: 'League Spartan', sans-serif;
   font-size: 18px;
-  /* Sets the font size*/
   font-weight: 400;
-  /* Sets the font weight*/
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.50em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
@@ -54,63 +54,56 @@ img {
 }
 
 a {
-  color: #5D30BF;
+  color: #5d30bf;
 }
 
 a:visited {
-  color: #5D30BF;
+  color: #5d30bf;
 }
 
 a:hover,
 a:focus {
   color: #994c30;
   text-decoration: none;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
-  /* selected link */
   color: #994c30;
 }
 
 a.button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #9A8DF2;
-  color: #ffffff;
-  /* needed to override the default link color */
+  background-color: #9a8df2;
+  color: #fff;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #7262de;
-  /* width of the border, type, color */
   transition: 0.5s opacity;
 }
 
 a.button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  color: #ffffff;
-  /* needed to override the default link color */
+  color: #fff;
 }
 
 a.button.contact {
   background-color: transparent;
   color: #7262de;
   text-transform: uppercase;
-  border: 2px solid #9A8DF2;
+  border: 2px solid #9a8df2;
 }
 
 .button.contact:hover {
   background-color: #7262de;
-  color: #ffffff;
+  color: #fff;
 }
 
 .prototypebut {
-text-align: center;
-font-size: 1.5em;
-padding: 5px
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
 }
 
 header {
@@ -129,19 +122,19 @@ header {
 
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
 }
 
 .center {
   text-align: center;
-  /* I add center to div class to activate */
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle,
+.responsive {
   position: relative;
 }
 
@@ -160,11 +153,9 @@ header {
   margin-bottom: auto;
 }
 
-
-
 header {
   position: fixed;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   padding: 10px 0;
   width: 100%;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.46);
@@ -176,14 +167,13 @@ nav {
   width: 100%;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 12px;
   text-transform: uppercase;
   font-weight: 700;
@@ -191,16 +181,16 @@ nav>ul>li>a {
   text-decoration: none;
 }
 
-nav>ul>li>a:visited {
-  color: #2B2B2B;
+nav > ul > li > a:visited {
+  color: #2b2b2b;
 }
 
-nav>ul>li>a:hover {
-  color: #5D30BF;
+nav > ul > li > a:hover {
+  color: #5d30bf;
 }
 
-nav>ul>li>a:active {
-  color: #5D30BF;
+nav > ul > li > a:active {
+  color: #5d30bf;
 }
 
 #hero {
@@ -211,7 +201,6 @@ nav>ul>li>a:active {
 
 #hero h1 {
   text-align: center;
-  /* Centers text */
 }
 
 main {
@@ -219,7 +208,7 @@ main {
 }
 
 .plutopaybackground {
-  background-image: linear-gradient(to bottom right, #0287FF, #FFFFFF);
+  background-image: linear-gradient(to bottom right, #0287ff, #fff);
   padding: 25px 15px;
 }
 
@@ -242,7 +231,6 @@ main {
   text-align: center;
 }
 
-
 .competitorlogo {
   display: flex;
   justify-content: space-between;
@@ -264,7 +252,7 @@ main {
 }
 
 .active {
-  color: #5D30BF !important;
+  color: #5d30bf !important;
 }
 
 .social {
@@ -278,7 +266,7 @@ main {
 
 .social .fa-brands {
   font-size: 1.3em;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
 .berlin-illustration {
@@ -337,20 +325,21 @@ main {
   animation: 10s cloud-move-reverse infinite linear;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #5D30BF;
+  border-top: 1px solid #5d30bf;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -369,17 +358,17 @@ Medium devices (640px and larger)
     margin-top: 14px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
   body {
     font-size: 20px;
@@ -424,7 +413,7 @@ Medium devices (640px and larger)
   }
 
   .profilebck {
-    background: radial-gradient(#000000, #2B2B2B);
+    background: radial-gradient(#000, #2b2b2b);
   }
 
   .flex {
@@ -437,11 +426,12 @@ Medium devices (640px and larger)
     justify-content: center;
   }
 
-  .projectmockup{
+  .projectmockup {
     box-sizing: border-box;
     display: block;
     margin: 0;
   }
+
   #contact span {
     display: block;
   }
@@ -469,36 +459,43 @@ Large devices (1024px or larger)
 
   .col-lg-5 .row .col-md-6 h3 {
     margin: 0;
-    }
+  }
 
-    .col-lg-7 p {
-    margin-right: 4em
-    }
+  .col-lg-7 p {
+    margin-right: 4em;
+  }
 
   .col-lg-5 .col-md-6 .ul {
     padding: 0;
-    }
+  }
 
-    body {
-      font-size: 22px;
-    }
+  body {
+    font-size: 22px;
+  }
 
-    .project h2, .project h3, .project h4, .project ul, .project p {
-max-width: 500px;
-    }
-    .plutopay1 {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 400px;
-    }
+  .project h2,
+  .project h3,
+  .project h4,
+  .project ul,
+  .project p {
+    max-width: 500px;
+  }
 
-    .projectwelcome .col-md-6 {
+  .plutopay1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+  }
+
+  .projectwelcome .col-md-6 {
     font-size: 1.35em;
-    }
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+
+}
