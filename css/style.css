@@ -275,6 +275,10 @@ main {
   height: auto;
 }
 
+.profileimg {
+  border-radius: 70%;
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
